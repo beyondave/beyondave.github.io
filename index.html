@@ -64,6 +64,678 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-apollo学习笔记（7）——感知" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/12/05/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5/" class="article-date">
+  <time datetime="2022-12-05T09:56:29.000Z" itemprop="datePublished">2022-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/12/05/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5/">apollo学习笔记（7）——感知</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/05/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5/" data-id="clbbt5mpo0004tkvoep8742lg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nvidia驱动更新" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/12/05/nvidia%E9%A9%B1%E5%8A%A8%E6%9B%B4%E6%96%B0/" class="article-date">
+  <time datetime="2022-12-05T07:17:06.000Z" itemprop="datePublished">2022-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/12/05/nvidia%E9%A9%B1%E5%8A%A8%E6%9B%B4%E6%96%B0/">nvidia驱动更新</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、查找显卡对应版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.nvidia.cn/geforce/drivers/</span><br></pre></td></tr></table></figure>
+
+<p>2.ubuntu安装对应版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nvidia-driver-525</span><br></pre></td></tr></table></figure>
+
+<p>3.检查</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/05/nvidia%E9%A9%B1%E5%8A%A8%E6%9B%B4%E6%96%B0/" data-id="clbbt5mpq0008tkvo7l9y6kut" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/12/05/docker%E5%AE%89%E8%A3%85/" class="article-date">
+  <time datetime="2022-12-05T06:44:29.000Z" itemprop="datePublished">2022-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/12/05/docker%E5%AE%89%E8%A3%85/">docker安装</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、<a target="_blank" rel="noopener" href="https://www.51cto.com/article/715086.html">docker安装</a></p>
+<p>1.更新Ubuntu</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update</span><br><span class="line">$ sudo apt upgrade</span><br><span class="line">$ sudo apt full-upgrade</span><br></pre></td></tr></table></figure>
+
+<p>2.添加docker库</p>
+<p>首先，安装必要的证书并允许 apt 包管理器使用以下命令通过 HTTPS 使用存储库：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install apt-transport-https ca-certificates curl software-properties-common gnupg lsb-release</span><br></pre></td></tr></table></figure>
+
+<p>然后，运行下列命令添加 Docker 的官方 GPG 密钥：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</span><br></pre></td></tr></table></figure>
+
+<p>添加 Docker 官方库：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ echo &quot;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span><br></pre></td></tr></table></figure>
+
+<p>使用命令更新 Ubuntu 源列表：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update</span><br></pre></td></tr></table></figure>
+
+<p>3.安装docker</p>
+<p>最后，运行下列命令在 Ubuntu 22.04 LTS 服务器中安装最新 Docker CE：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin</span><br></pre></td></tr></table></figure>
+
+<p>当然你也可以安装其他版本 Docker 。运行下列命令检查可以安装的 Docker 版本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache madison docker-ce</span><br></pre></td></tr></table></figure>
+
+<p>输出样例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker-ce | 5:20.10.17~3-0~ubuntu-jammy | https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages</span><br><span class="line">   docker-ce | 5:20.10.16~3-0~ubuntu-jammy | https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages</span><br><span class="line">   docker-ce | 5:20.10.15~3-0~ubuntu-jammy | https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages</span><br><span class="line">   docker-ce | 5:20.10.14~3-0~ubuntu-jammy | https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages</span><br><span class="line">   docker-ce | 5:20.10.13~3-0~ubuntu-jammy | https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages</span><br></pre></td></tr></table></figure>
+
+<p>你可以挑选上面列表中的任何版本进行安装。例如，安装 <strong>5:20.10.16~ 3-0 ~ubuntu-jammy</strong> 这个版本，运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install docker-ce=5:20.10.16~3-0~ubuntu-jammy docker-ce-cli=5:20.10.16~3-0~ubuntu-jammy containerd.io</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，运行如下命令验证 Docker 服务是否在运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl status docker</span><br></pre></td></tr></table></figure>
+
+<p>你会看到类似下面的输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">* docker.service - Docker Application Container Engine</span><br><span class="line">         Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)</span><br><span class="line">         Active: active (running) since Mon 2022-06-27 13:07:43 UTC; 3min 4s ago</span><br><span class="line">    TriggeredBy: * docker.socket</span><br><span class="line">           Docs: https://docs.docker.com</span><br><span class="line">       Main PID: 2208 (dockerd)</span><br><span class="line">          Tasks: 8</span><br><span class="line">         Memory: 29.6M</span><br><span class="line">            CPU: 126ms</span><br><span class="line">         CGroup: /system.slice/docker.service</span><br><span class="line">                 `-2208 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.071453522Z&quot; level=info msg=&quot;ccResolverWrapper: sending update to cc: &#123;[&#123;unix:&gt;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.071459974Z&quot; level=info msg=&quot;ClientConn switching balancer to \&quot;pick_first\&quot;&quot; &gt;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.130989294Z&quot; level=info msg=&quot;Loading containers: start.&quot;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.187439756Z&quot; level=info msg=&quot;Default bridge (docker0) is assigned with an IP a&gt;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.235966874Z&quot; level=info msg=&quot;Loading containers: done.&quot;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.240149866Z&quot; level=warning msg=&quot;Not using native diff for overlay2, this may c&gt;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.240281966Z&quot; level=info msg=&quot;Docker daemon&quot; commit=a89b842 graphdriver(s)=over&gt;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.240386856Z&quot; level=info msg=&quot;Daemon has completed initialization&quot;</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT systemd[1]: Started Docker Application Container Engine.</span><br><span class="line">    Jun 27 13:07:43 Ubuntu22CT dockerd[2208]: time=&quot;2022-06-27T13:07:43.276336600Z&quot; level=info msg=&quot;API listen on /run/docker.sock&quot;</span><br></pre></td></tr></table></figure>
+
+<p>好极了！Docker 服务已启动并运行！</p>
+<p>如果没有运行，运行以下命令运行 Docker 服务：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<p>使 Docker 服务在每次重启时自动启动：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl enable docker</span><br></pre></td></tr></table></figure>
+
+<p>可以使用以下命令查看已安装的 Docker 版本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker version</span><br></pre></td></tr></table></figure>
+
+<p>4.测试docker</p>
+<p>让我们继续，测试 Docker 是否运行正常：</p>
+<p>运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker run hello-world</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/05/docker%E5%AE%89%E8%A3%85/" data-id="clbbt5mpo0005tkvo1q4l29c0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-apollo-day-2022-11-29会议笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2022-11-30T06:49:48.000Z" itemprop="datePublished">2022-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/">apollo_day_2022_11_29会议笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、自动驾驶体系——陈竞凯</p>
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/1.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/2.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/3.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/4.png" class="" title="aaa">
+
+<p>二、自动驾驶地图——黄际洲</p>
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/5.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/6.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/7.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/8.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/9.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/10.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/11.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/12.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/13.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/14.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/15.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/16.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/17.png" class="" title="aaa">
+
+<p>三、文献大模型应用——王井东</p>
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/18.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/19.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/20.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/21.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/22.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/23.png" class="" title="aaa">
+
+<p>四、自动驾驶数据闭环——李昂</p>
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/24.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/25.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/26.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/27.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/28.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/29.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/30.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/31.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/32.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/33.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/34.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/35.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/36.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/37.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/38.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/39.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/40.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/41.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/42.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/43.png" class="" title="aaa">
+
+<p>五、AI芯片——欧阳剑</p>
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/44.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/45.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/46.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/47.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/48.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/49.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/50.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/51.png" class="" title="aaa">
+
+<p>六、L4/L2+技术共生——王亮</p>
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/52.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/53.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/54.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/55.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/56.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/57.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/58.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/59.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/60.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/61.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/62.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/63.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/64.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/65.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/66.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/67.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/68.png" class="" title="aaa">
+
+<img src="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/69.png" class="" title="aaa">
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/" data-id="clbbt5mpm0002tkvohv8zgw84" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-驱动力" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/11/29/%E9%A9%B1%E5%8A%A8%E5%8A%9B/" class="article-date">
+  <time datetime="2022-11-29T12:22:43.000Z" itemprop="datePublished">2022-11-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/11/29/%E9%A9%B1%E5%8A%A8%E5%8A%9B/">驱动力</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.驱动力分为三种：</p>
+<p>​    生物性驱动力。人类饮食以止饿，饮水以解渴，交配以满足性欲。</p>
+<p>​    外在动机。做出特定行为时，环境会带来奖励或惩罚。</p>
+<p>​    内在动机。人类想要主导自己的人生、学习并创造新的事物，让自己及周围的世界变得更好。</p>
+<p>2.奖励的副作用：</p>
+<p>​    奖励只能带来短期的爆发，其效果会逐渐消失，并且会降低人们继续这项工作所需的长期积极性。</p>
+<p>3.Ⅰ型行为，指由第三种驱动力驱使的行为。</p>
+<p>4.驱动力2.0的核心观点：对一个行为加以奖励会提高这种行为发生的频率，对一个行为施以惩罚会降低这种行为发生的频率。</p>
+<p>5.基线报酬：代表报酬的底线，如果报酬低于该值，那么人的关注点就会放在所处环境的不公以及对环境的焦虑上。只有解决了这个问题，其他类型的激励才会有效果。</p>
+<p>6.马克吐温关于积极性的原则：所谓工作就是一个人被迫要干的事，玩则是一个人没有义务要做的事。</p>
+<p>7.外在激励会扼杀第三种驱动力。</p>
+<p>8.奖励可能会上瘾。奖励会带来愉悦感，但这种感觉来的快去的也快，为了维持这种感觉，就需要加大剂量。</p>
+<p>9.胡萝卜加大棒的七个缺点：</p>
+<p>​    导致内在动机消失</p>
+<p>​    造成成绩下降</p>
+<p>​    扼杀创造力</p>
+<p>​    抑制善行</p>
+<p>​    鼓励欺诈、走捷径以及不道德的行为</p>
+<p>​    让人成瘾</p>
+<p>​    滋生短视思维</p>
+<p>10.对于无聊的任务，奖励不会破坏人们的内在积极性，因为根本就没有积极性可以破坏。</p>
+<p>11.X型行为更多由外在动机而非内在动机驱动，并且更多关注一项活动带来的外在奖励而非内在满足感。</p>
+<p>12.A型人终日摇旗呐喊，手舞足蹈，像是得了“匆忙症”。而B型人则不同，他们在生活中似乎很少匆匆忙忙，也不会因为自己的需求而显得有敌意。</p>
+<p>13.X理论：大多数管理者认为，他们的员工从骨子里讨厌工作，要是情况允许的话，一定会逃避工作。这些没有个性的奴隶害怕承担责任，迫切需要安全感，极度渴望被指引。因此，“必须强迫他们，控制他们，给他们指引，用惩罚威胁他们，让他们努力工作，并最终达到企业的目标”。</p>
+<p>14.Y理论：对工作感兴趣“和玩乐、休息一样自然”，很多人都善于创造，他们足智多谋，只要情况允许，他们就会接受甚至主动寻求责任感。</p>
+<p>15.自主，即自我管理。</p>
+<p>16.如果他们必须做的事情超过了他们的能力范围，结果就会是焦虑；如果他们必须做的事情达不到他们的能力范围，结果就会是厌倦。</p>
+<p>17.人生中最富足的体验不是得到别人的认可，而是能够倾听自己的声音：做重要的事情，做好它，为了达成自己的事业而努力。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/11/29/%E9%A9%B1%E5%8A%A8%E5%8A%9B/" data-id="clbbt5mpt000btkvofyjadbw8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-apollo学习笔记（6）——ros" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/" class="article-date">
+  <time datetime="2022-11-29T12:14:59.000Z" itemprop="datePublished">2022-11-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/">apollo学习笔记（6）——ros</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、背景介绍</p>
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/1.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/2.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/3.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/4.png" class="" title="aaa">
+
+<p>二、ROS概述</p>
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/5.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/6.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/7.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/8.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/9.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/10.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/11.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/12.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/13.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/14.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/15.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/16.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/17.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/18.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/19.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/20.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/21.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/22.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/23.png" class="" title="aaa">
+
+<p>三、apollo ros原理</p>
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/24.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/25.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/26.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/27.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/28.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/29.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/30.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/31.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/32.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/33.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/34.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/35.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/36.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/37.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/38.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/39.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/40.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/41.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/42.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/43.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/44.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/45.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/46.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/47.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/48.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/49.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/50.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/51.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/52.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/53.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/54.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/55.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/56.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/57.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/58.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/59.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/60.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/61.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/62.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/63.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/64.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/65.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/66.png" class="" title="aaa">
+
+<p>四、ROS深入介绍</p>
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/67.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/68.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/69.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/70.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/71.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/72.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/73.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/74.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/75.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/76.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/77.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/78.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/79.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/80.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/81.png" class="" title="aaa">
+
+<img src="/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/82.png" class="" title="aaa">
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/11/29/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%886%EF%BC%89%E2%80%94%E2%80%94ros/" data-id="clbbt5mpn0003tkvo9nw6g807" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo用法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/11/29/hexo%E7%94%A8%E6%B3%95/" class="article-date">
+  <time datetime="2022-11-29T10:57:33.000Z" itemprop="datePublished">2022-11-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/11/29/hexo%E7%94%A8%E6%B3%95/">hexo用法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.hexo用法</p>
+<p>​    <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">hexo文档</a></p>
+<p>2.超链接语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](www.baidu.com)</span><br></pre></td></tr></table></figure>
+
+<p>3.删除文章</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">	直接本地删除文件</span><br><span class="line"></span><br><span class="line">​	hexo g</span><br><span class="line"></span><br><span class="line">​	hexo d</span><br></pre></td></tr></table></figure>
+
+<p>4.推送文件到服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	编辑文件完成并保存</span><br><span class="line"></span><br><span class="line">​	hexo clean</span><br><span class="line"></span><br><span class="line">​	hexo g</span><br><span class="line"></span><br><span class="line">​	hexo d</span><br></pre></td></tr></table></figure>
+
+<p>5.语法标记</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入```回车</span><br></pre></td></tr></table></figure>
+
+<p>6.本地预览</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server	——启动服务器</span><br><span class="line">访问localhost:4000</span><br></pre></td></tr></table></figure>
+
+<p>7.<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_15477117/4919656#1img_8">引用图片</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">方法一（只能本地）</span><br><span class="line">![图片加载失败的描述](图片链接)</span><br><span class="line">![](/fold/file.png)	</span><br><span class="line">方法二（可以web访问）</span><br><span class="line">&#123;% asset_img 图片文件名 图片加载失败的描述 %&#125;</span><br><span class="line">&#123;% asset_img 1.png aaa %&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/11/29/hexo%E7%94%A8%E6%B3%95/" data-id="clbbt5mpq0007tkvo35uq0pxz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-“影响力”" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/10/13/%E2%80%9C%E5%BD%B1%E5%93%8D%E5%8A%9B%E2%80%9D/" class="article-date">
@@ -91,7 +763,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/13/%E2%80%9C%E5%BD%B1%E5%93%8D%E5%8A%9B%E2%80%9D/" data-id="clb23cyc80004w8vo8kra2qpl" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/10/13/%E2%80%9C%E5%BD%B1%E5%93%8D%E5%8A%9B%E2%80%9D/" data-id="clbbt5mps000atkvod3bwh8z0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -127,7 +799,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/12/C-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%EF%BC%88%E7%AC%AC%E4%BA%8C%E7%89%88%EF%BC%89/" data-id="clb23cyc10001w8vof0eb9vdd" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/10/12/C-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%EF%BC%88%E7%AC%AC%E4%BA%8C%E7%89%88%EF%BC%89/" data-id="clbbt5mpj0001tkvodda6bd4f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -166,141 +838,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/21/%E8%90%BD%E5%9C%B0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E7%A1%85%E8%B0%B7%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E4%BA%A7%E5%93%81%E5%BF%83%E7%BB%8F/" data-id="clb23cyc80005w8vo1r5pfkl3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/09/21/test/" class="article-date">
-  <time datetime="2022-09-21T00:24:12.000Z" itemprop="datePublished">2022-09-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/09/21/test/">test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/21/test/" data-id="clb23cyc70003w8vofp3j01do" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-文章-title" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/08/26/%E6%96%87%E7%AB%A0-title/" class="article-date">
-  <time datetime="2022-08-26T09:29:49.449Z" itemprop="datePublished">2022-08-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/08/26/%E6%96%87%E7%AB%A0-title/">ddd</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New a&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/08/26/%E6%96%87%E7%AB%A0-title/" data-id="clb23cyc90006w8vod1s9ee6z" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/08/26/hello-world/" class="article-date">
-  <time datetime="2022-08-26T09:25:08.969Z" itemprop="datePublished">2022-08-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/08/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/08/26/hello-world/" data-id="clb23cyc50002w8voe81m5hkp" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/21/%E8%90%BD%E5%9C%B0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E7%A1%85%E8%B0%B7%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E4%BA%A7%E5%93%81%E5%BF%83%E7%BB%8F/" data-id="clbbt5mps0009tkvo4syxgvel" class="article-share-link">Share</a>
       
       
     </footer>
@@ -311,6 +849,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+  </nav>
 
 </section>
         
@@ -328,7 +871,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
     </div>
   </div>
 
@@ -341,23 +884,23 @@
       <ul>
         
           <li>
-            <a href="/2022/10/13/%E2%80%9C%E5%BD%B1%E5%93%8D%E5%8A%9B%E2%80%9D/">“影响力”</a>
+            <a href="/2022/12/05/apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%887%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5/">apollo学习笔记（7）——感知</a>
           </li>
         
           <li>
-            <a href="/2022/10/12/C-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%EF%BC%88%E7%AC%AC%E4%BA%8C%E7%89%88%EF%BC%89/">C++并发编程实战（第二版）</a>
+            <a href="/2022/12/05/nvidia%E9%A9%B1%E5%8A%A8%E6%9B%B4%E6%96%B0/">nvidia驱动更新</a>
           </li>
         
           <li>
-            <a href="/2022/09/21/%E8%90%BD%E5%9C%B0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E7%A1%85%E8%B0%B7%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E4%BA%A7%E5%93%81%E5%BF%83%E7%BB%8F/">落地之路——硅谷无人驾驶产品心经</a>
+            <a href="/2022/12/05/docker%E5%AE%89%E8%A3%85/">docker安装</a>
           </li>
         
           <li>
-            <a href="/2022/09/21/test/">test</a>
+            <a href="/2022/11/30/apollo-day-2022-11-29%E4%BC%9A%E8%AE%AE%E7%AC%94%E8%AE%B0/">apollo_day_2022_11_29会议笔记</a>
           </li>
         
           <li>
-            <a href="/2022/08/26/%E6%96%87%E7%AB%A0-title/">ddd</a>
+            <a href="/2022/11/29/%E9%A9%B1%E5%8A%A8%E5%8A%9B/">驱动力</a>
           </li>
         
       </ul>
